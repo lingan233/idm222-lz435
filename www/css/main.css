@@ -1,2 +1,50 @@
+@import 'normalize.css';
+
+* { 
+    margin: 0 auto;
+    /* overflow: auto; */
+}
+
+/* html {
+    font-size: 100%;
+} */
+
+h1, h2, h3, p {
+    line-height: 1.75rem;
+}
+
+.section-black {
+    background-color: black;
+    color: lightgray;
+}
+
+.section-black h1 {
+    color: white;
+}
+
+.section-black h2 {
+    color: purple;
+}
+
+#home-intro-block {
+    display: flex;
+}
+
+#home-pic {
+    box-shadow: 30px 30px purple;
+    /* border: 3rem; */
+}
+
+header {
+    background-color: black;
+}
 
 
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 480px) {
+}
