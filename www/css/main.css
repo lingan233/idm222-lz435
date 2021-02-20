@@ -1,10 +1,5 @@
 @import 'normalize.css';
 
-* { 
-    margin: 0 auto;
-    /* overflow: auto; */
-}
-
 /* html {
     font-size: 100%;
 } */
@@ -13,9 +8,19 @@ h1, h2, h3, p {
     line-height: 1.75rem;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .section-black {
     background-color: black;
     color: lightgray;
+    padding: 10rem 13rem 13rem 13rem;
 }
 
 .section-black h1 {
@@ -26,19 +31,84 @@ h1, h2, h3, p {
     color: purple;
 }
 
-#home-intro-block {
+.section-black h3 {
+    color:lightgray;
+}
+
+.section-gray {
+    background-color: #f4f4f4;
+    padding: 5rem 10rem 7rem 13rem;
+}
+/* -------------------------HEADER------------------------- */
+
+header.section-black {
+    padding: 0 3rem;
+}
+
+header div {
     display: flex;
+    justify-content: space-between;
+}
+
+header h3 {
+    padding: 1rem;
+}
+
+hr {
+    border: 2px solid purple;
+    width: 50%;
+    margin-left: -6rem;
+}
+
+/* -------------------------MAIN------------------------- */
+
+#home-intro-block {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 #home-pic {
     box-shadow: 30px 30px purple;
-    /* border: 3rem; */
+    margin: -5rem 3rem;
 }
 
-header {
-    background-color: black;
+.card {
+    background-color: white;
+    margin: 3rem 0;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.card a {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    color: black;
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.card a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card a div button {
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border: 2px solid purple;
+    border-radius: 5px;
+    background-color: white;
+    color: purple;
+}
+
+
+.card a div button:hover {
+    background-color:lightgray;
+}
 
 @media screen and (min-width: 1024px) {
 }
