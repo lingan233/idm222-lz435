@@ -16,7 +16,8 @@ img {
 .section-black {
     background-color: black;
     color: lightgray;
-    padding: 8rem 10rem;
+    /* padding: 8rem 10rem; */
+    padding: 2rem;
 }
 
 .section-black h1 {
@@ -36,13 +37,22 @@ img {
 
 .section-gray {
     background-color: #f4f4f4;
-    /* padding: 5rem 10rem 7rem 13rem; */
-    padding: 3rem 3rem 6rem;
+    /* padding: 3rem 3rem 6rem; */
+    padding: 3rem 2rem 6rem;
 }
+
+.section-gray h1 {
+    line-height: 3rem;
+}
+
+.section-white {
+    padding: 3rem 2rem 6rem;
+}
+
 /* -------------------------HEADER------------------------- */
 
 header.section-black {
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
 header div {
@@ -54,23 +64,26 @@ header h3 {
     padding: 1rem;
 }
 
+#burger {
+    width: 1.5rem;
+    margin: 2rem 0;
+}
+
 /* -------------------------MAIN------------------------- */
 
 #home-intro-block {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     max-width: 60rem;
     margin: auto;
 }
 
 #home-pic {
     box-shadow: 30px 30px purple;
-    position: relative;
-    top: -5rem;
 }
 
 #home-intro-text {
-    padding-right: 3rem;
+    padding-right: 0rem;
 }
 
 .card {
@@ -83,22 +96,11 @@ header h3 {
 
 .card a {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     color: black;
 }
 
-.card h2 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-}
-
-.card a div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card a div button {
+button {
     padding: 1rem 2rem;
     margin: 2rem 0;
     border: 2px solid purple;
@@ -108,7 +110,7 @@ header h3 {
     cursor: pointer; 
 }
 
-.card a div button:hover {
+button:hover {
     background-color:lightgray;
 }
 
@@ -119,16 +121,48 @@ hr {
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 960px) {
-    .section-black{
-        padding: 4rem 7rem;
-    }
+/* >960px */
+@media screen and (min-width: 60rem) {
     #home-intro-block {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 50% 50%;
         max-width: 60rem;
         margin: auto;
     }
+    
+    #home-pic {
+        box-shadow: 30px 30px purple;
+        position: relative;
+        top: -5rem;
+    }
+
+    #home-intro-text {
+        padding-right: 3rem;
+    }
+    
+    .card a {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        color: black;
+    }
+    
+    .card h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    
+}
+
+/* >820px */
+@media screen and (min-width: 51.25rem) {
+    .section-black{
+        padding: 4rem 7rem;
+    }
+
+    header.section-black {
+        padding: 0 3rem;
+    }
+
     #home-pic {
         box-shadow: 30px 30px purple;
         position: relative;
@@ -137,31 +171,21 @@ hr {
     }
 }
 
-@media screen and (max-width: 820px) {
+/* >480px */
+@media screen and (min-width: 30rem) {
     .section-black{
         padding: 3rem 5rem;
     }
     .card {
-        max-width: 30rem;
         margin: 0 auto;
         margin-top: 3rem;
     }
-    .card a {
-        display: grid;
-        grid-template-columns: 100%;
-        color: black;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .section-black{
-        padding: 2rem;
-    }
-    .section-gray {
-        padding: 3rem 2rem 6rem;
-    }
-    #home-intro-text {
-        padding-right: 0rem;
+    
+    #home-pic {
+        box-shadow: 30px 30px purple;
+        position: relative;
+        top: 0%;
+        margin: 3rem 0;
     }
 }
 
@@ -169,4 +193,18 @@ hr {
 
 footer {
     text-align: center;
+}
+
+.buttons{
+    display: flex;
+    /* margin: auto; */
+    /* align-items: center; */
+}
+
+.social-button {
+    background-color: lightblue;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin: 1rem;
 }
