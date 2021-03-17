@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/main.css">
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskBuddy Multimedia Design</title>
@@ -11,22 +12,40 @@
 <body>
     <div class="wrapper">
         <header class="section-black">
-            <div>
-                <div>
+            <div class="nav-container">
+                <div class="nav-bar">
                     <a href="index.html">
                         <h3>LING ZHENG</h3>
                     </a>
+                    <div class="top-nav">
+                        <a href="javascript:void(0);" id="burger" onclick="myFunction()">
+                            <img src="images/hamburger.png" alt="hamburger">
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="" id="burger">
-                        <img src="images/hamburger.png" alt="hamburger">
-                    </a>
+                <div id="my-links">
+                    <a class="nav-item" href="javascript:void(0);" onclick="myFunction1()">WORK</a>
+                    <div id="my-works">
+                        <a href="quora.html">Quora Mobile App Redesign</a>
+                        <br>
+                        <a href="taskbuddy.html">TaskBuddy Multimedia Design</a>
+                        <br>
+                        <a href="school.html">School Website Redesign</a>
+                    </div>
+                    <br>
+                    <a class="nav-item" href="https://www.linkedin.com/in/lingan-zheng-932182168/">LINKEDIN</a>
+                    <br>
+                    <a class="nav-item" href="mailto:lingan233@gmail.com">EMAIL</a>
+                    <br>
                 </div>
             </div>
         </header>
 
         <main>
-            <img src="images/taskbuddy.jpg" alt="Taskbuddy Preview">
+            <picture>
+                <source media="(min-width: 60rem)" srcset="images/taskbuddy.jpg" />
+                <img src="images/taskbuddy-mobile.jpg" alt="preview" class="preview-img"/>
+            </picture>
             <div class="section-gray">
                 <div class="container">
                     <h1>Taskbuddy Multimedia Design</h1>
@@ -61,14 +80,12 @@
                     <div class="responsive">
                         <div>
                             <h2>Market Research</h2>
+                            <p>Researched... </p>
                             <ul>
-                                <li>Researched... </li>
-                                <ul>
-                                    <li>College commuting</li>
-                                    <li>Mental Health</li>
-                                    <li>Transportation</li>
-                                    <li>Time Management products and services</li>
-                                </ul>
+                                <li>College commuting</li>
+                                <li>Mental Health</li>
+                                <li>Transportation</li>
+                                <li>Time Management products and services</li>
                             </ul>
                         </div>
                         <div>
@@ -152,11 +169,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="figure">
+                    <div>
                         <img src="images/taskbuddy-affinity-diagram.jpg" alt="Affinity Diagram" />
                         <p class="caption">Affinity Diagram</p>
                     </div>
-                    <div class="figure">
+                    <div>
                         <img src="images/taskbuddy-empathy-map.jpg" alt="Empathy Map" />
                         <p class="caption">Empathy Map</p>
                     </div>
@@ -172,7 +189,7 @@
                         <li>The chosen idea focused on the time and the emotions,
                             which is of high priority</li>
                     </ul>
-                    <div class="figure">
+                    <div>
                         <img src="images/taskbuddy-ideation.jpg" alt="Ideations" />
                         <p class="caption">Ideations</p>
                     </div>
@@ -187,8 +204,8 @@
                         <li>Story board</li>
                     </ul>
                     <a href="https://xd.adobe.com/view/adaae2f9-8731-43cc-66d7-0dcee74ce584-db9b/?fullscreen"
-                        class="button"><span>Prototype</a>
-                    <div class="figure">
+                        class="button"><span>Prototype</span></a>
+                    <div>
                         <img src="images/taskbuddy-storyboard.jpg" alt="Storyboard" />
                     </div>
                 </div>

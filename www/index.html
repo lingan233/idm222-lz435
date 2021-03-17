@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/main.css">
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LingAn Zheng's Portfolio</title>
@@ -11,28 +12,31 @@
 <body>
     <div class="wrapper">
         <header class="section-black">
-            <div>
-                <div>
+            <div class="nav-container">
+                <div class="nav-bar">
                     <a href="index.html">
                         <h3>LING ZHENG</h3>
                     </a>
+                    <div class="top-nav">
+                        <a href="javascript:void(0);" id="burger" onclick="myFunction()">
+                            <img src="images/hamburger.png" alt="hamburger">
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <!-- <a href="XXXX">
-                        <h3>WORK</h3>
-                    </a>
-                    <a href="XXXX">
-                        <h3>LINKEDIN</h3>
-                    </a>
-                    <a href="XXXX">
-                        <h3>EMAIL</h3>
-                    </a>
-                    <a href="XXXX">
-                        <h3>RESUME</h3>
-                    </a> -->
-                    <a href="" id="burger">
-                        <img src="images/hamburger.png" alt="hamburger">
-                    </a>
+                <div id="my-links">
+                    <a class="nav-item" href="javascript:void(0);" onclick="myFunction1()">WORK</a>
+                    <div id="my-works">
+                        <a href="quora.html">Quora Mobile App Redesign</a>
+                        <br>
+                        <a href="taskbuddy.html">TaskBuddy Multimedia Design</a>
+                        <br>
+                        <a href="school.html">School Website Redesign</a>
+                    </div>
+                    <br>
+                    <a class="nav-item" href="https://www.linkedin.com/in/lingan-zheng-932182168/">LINKEDIN</a>
+                    <br>
+                    <a class="nav-item" href="mailto:lingan233@gmail.com">EMAIL</a>
+                    <br>
                 </div>
             </div>
         </header>
@@ -69,7 +73,7 @@
                         <div>
                             <h2>Mobile App Rebranding</h2>
                             <p>Taskflow / Interaction / Rebranding</p>
-                            <button class="button"><span>View</button>
+                            <div class="button"><span>View</span></div>
                         </div>
                     </a>
                 </div>
@@ -81,7 +85,7 @@
                         <div>
                             <h2>TaskBuddy Design</h2>
                             <p>Research / Ideation / Product Design</p>
-                            <button class="button"><span>View</button>
+                            <div class="button"><span>View</span></div>
                         </div>
                     </a>
                 </div>
@@ -93,7 +97,7 @@
                         <div>
                             <h2>School Website Redesign</h2>
                             <p>Research / Visual Design / Prototyping</p>
-                            <button class="button"><span>View</button>
+                            <div class="button"><span>View</span></div>
                         </div>
                     </a>
                 </div>
@@ -103,12 +107,13 @@
         <footer class="section-black">
             <div class="container">
                 <div class="buttons">
-                    <div class="social-button">
+                    <a href="mailto:lingan233@gmail.com" class="social-button">
                         <img src="images/email.png" alt="Email Button">
-                    </div>
-                    <div class="social-button" id="linkedin-button">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lingan-zheng-932182168/" class="social-button"
+                        id="linkedin-button">
                         <img src="images/linkedin.png" alt="Linkedin Button">
-                    </div>
+                    </a>
                 </div>
             </div>
         </footer>

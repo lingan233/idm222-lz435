@@ -4,6 +4,18 @@ h1, h2, h3, p, ul {
     line-height: 1.75rem;
 }
 
+h1 {
+    font-family: 'mulish', arial;
+}
+
+h2, h3, a {
+    font-family: 'hind', arial;
+}
+
+p, ul {
+    font-family: 'work-sans', arial;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -16,6 +28,10 @@ img {
     margin: auto;
 }
 
+.preview-img {
+    max-width: 70%;
+}
+
 .section-black {
     background-color: black;
     color: lightgray;
@@ -24,7 +40,7 @@ img {
 
 .section-black h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .section-black h2 {
@@ -56,24 +72,93 @@ img {
     margin-bottom: 2rem;
 }
 
+@font-face {
+    font-family: 'hind';
+    src: url('../fonts/hind.woff2') format('woff2'),
+        url('../fonts/hind.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mulish';
+    src: url('../fonts/mulish.woff2') format('woff2'),
+        url('../fonts/mulish.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'work-sans';
+    src: url('../fonts/work-sans.woff2') format('woff2'),
+        url('../fonts/work-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* -------------------------HEADER------------------------- */
 
 header.section-black {
     padding: 0 1rem;
 }
 
-header div {
+.nav-bar {
     display: flex;
     justify-content: space-between;
 }
 
 header h3 {
-    padding: 1rem;
+    padding: .25rem 1rem;
+}
+
+.nav-bar h3 {
+    font-size: 1.5rem;
 }
 
 #burger {
     width: 1.5rem;
-    margin: 1rem;
+    padding: 1rem;
+    display: block;
+}
+
+#burger:hover {
+    opacity: 70%;
+}
+
+.nav-bar h3:hover {
+    opacity: 70%;
+}
+
+.top-nav a {
+    display: block;
+}
+
+#my-links, #my-works {
+    display: none;
+    background-color: black;
+}
+
+#my-links {
+    padding-bottom: 2rem;
+}
+
+.nav-item, #my-works a {
+    padding: 1rem;
+    margin: 3rem;
+    color: lightgray;
+    line-height: 3rem;
+}
+
+#my-works a {
+    margin-left: 4rem;
+    font-size: .9rem;
+}
+
+#my-links a:hover{
+    opacity: 70%;
 }
 
 /* -------------------------MAIN------------------------- */
@@ -120,16 +205,12 @@ header h3 {
     cursor: pointer; 
 }
 
-/* .button:hover {
-    background-color: lightgray;
-} */
-
 .button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.3s;
-  }
+}
   
 .button span:after {
     content: '\276F';
@@ -196,6 +277,14 @@ hr {
 
 /* >960px */
 @media screen and (min-width: 60rem) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
     #home-intro-block {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -219,6 +308,11 @@ hr {
 
     .container {
         max-width: 60rem;
+        margin: auto;
+    }
+
+    .nav-container {
+        max-width: 62rem;
         margin: auto;
     }
     
@@ -266,6 +360,12 @@ hr {
     height: 3rem;
     border-radius: 50px;
     margin: 1rem;
+}
+
+.social-button:hover {
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem;
 }
 
 .social-button img {

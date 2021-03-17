@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/main.css">
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quora Mobile App Rebranding</title>
@@ -12,22 +13,41 @@
 <body>
     <div class="wrapper">
         <header class="section-black">
-            <div>
-                <div>
+            <div class="nav-container">
+                <div class="nav-bar">
                     <a href="index.html">
                         <h3>LING ZHENG</h3>
                     </a>
+                    <div class="top-nav">
+                        <a href="javascript:void(0);" id="burger" onclick="myFunction()">
+                            <img src="images/hamburger.png" alt="hamburger">
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="" id="burger">
-                        <img src="images/hamburger.png" alt="hamburger">
-                    </a>
+                <div id="my-links">
+                    <a class="nav-item" href="javascript:void(0);" onclick="myFunction1()">WORK</a>
+                    <div id="my-works">
+                        <a href="quora.html">Quora Mobile App Redesign</a>
+                        <br>
+                        <a href="taskbuddy.html">TaskBuddy Multimedia Design</a>
+                        <br>
+                        <a href="school.html">School Website Redesign</a>
+                    </div>
+                    <br>
+                    <a class="nav-item" href="https://www.linkedin.com/in/lingan-zheng-932182168/">LINKEDIN</a>
+                    <br>
+                    <a class="nav-item" href="mailto:lingan233@gmail.com">EMAIL</a>
+                    <br>
                 </div>
             </div>
         </header>
 
         <main>
-            <img src="images/quora.png" alt="Quora Preview">
+            <picture>
+                <source media="(min-width: 60rem)" srcset="images/quora.jpg" />
+                <img src="images/quora-mobile.jpg" alt="preview" class="preview-img"/>
+            </picture>
+            
             <div class="section-gray">
                 <div class="container">
                     <h1>Quora Mobile App Rebranding</h1>
@@ -84,7 +104,7 @@
                     <div class="responsive-70">
                         <div>
                             <h2>Wireframes</h2>
-                            <ul>
+                            <ul class="gap-right">
                                 <li>Gathering inspiration from similar existing product and good UI examples</li>
                                 <li>Paper wireframes create a direct preview of the possible approximate structure</li>
                                 <li>Help brainstorm and produce a better structure</li>
@@ -112,12 +132,8 @@
                                 answers under the same question</li>
                         </ul>
                     </div>
-                    <div class="figure">
-                        <img src="images/quora-taskflow.jpg" alt="Quora Task Flow" />
-                    </div>
-                    <div class="figure">
-                        <img src="images/quora-taskflow-redesign.jpg" alt="Quest Task Flow (New)" />
-                    </div>
+                    <img src="images/quora-taskflow.jpg" alt="Quora Task Flow"/>
+                    <img src="images/quora-taskflow-redesign.jpg" alt="Quest Task Flow (New)"/>
                 </div>
             </div>
 
@@ -197,17 +213,17 @@
                     </div>
                     <div>
                         <h3 id="micro-interactions-1">3 Micro-interactions</h3>
-                        <div class="figure">
+                        <div>
                             <img class="smaller" src="images/quest1.gif" alt="Micro-interaciton 1" />
                             <p class="caption">Open Home Page Micro-interaction</p>
                         </div>
                         <br>
-                        <div class="figure">
+                        <div>
                             <img class="smaller" src="images/quest2.gif" alt="Micro-interaciton 2" />
                             <p class="caption">Minimize Question Bar Micro-interaciton</p>
                         </div>
                         <br>
-                        <div class="figure">
+                        <div>
                             <img class="smaller" src="images/quest3.gif" alt="Micro-interaciton 3" />
                             <p class="caption">Swipe for Next Answer Micro-interaction</p>
                         </div>
